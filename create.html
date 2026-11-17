@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="color.css">
+    <script src="func.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dashboard_2_edit" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head> 
+
+<body>
+    <nav id="sidebar">
+
+        <ul>
+
+            <li class="name">
+                <span class="brand">Bengkong Gadz</span>
+                <button onclick="toggleSidebar()"" class="minu" id="toggle_btn"><img class="ikon" src="icons/Menu.svg"></button>
+            </li>
+
+            <li class="active">
+                <a href="index.html">
+                    <img src="icons/home.svg.svg">
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">
+                    <img class="svg" src="icons/dashboard.svg.svg">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="qr.html">
+                    <img class="svg"  src="icons/scanner.svg">
+                    <span>QR Scanner</span>
+                </a>
+            </li>
+            
+
+            <li class="scroll">
+                <button onclick="toggleSection(this)" class="dropdown_btn">
+                    <img src="icons/list.svg">
+                    <span>Attendace</span>
+                    <img class="svg" src="icons/dropdown.svg">
+                </button>
+                <ul class="section">
+                    <div>
+                        <li><a href="#">Matthew</a></li>
+                        <li><a href="#">Mark</a></li>
+                        <li><a href="#">Luke</a></li>
+                        <li><a href="#">John</a></li>
+                        <li><a href="#">Romans</a></li>
+                        <li><a href="hebrews.html">Hebrews</a></li>
+                        <li><a href="#">Peter</a></li>
+                        <li><a href="#">Corithians</a></li>
+                        <li><a href="#">Galatian</a></li>
+                        <li><a href="#">Ephesians</a></li>
+                        <li><a href="#">Philippians</a></li>
+                        <li><a href="#">Colossians</a></li>
+                        <li><a href="#">Andrew</a></li>
+                        <li><a href="#">James</a></li>
+                        <li><a href="#">Thomas</a></li>
+                        <li><a href="#">Philip</a></li>
+                        <li><a href="#">Nathanael</a></li>
+                        <li><a href="#">Simon</a></li>
+                        <li><a href="#">Matthias</a></li>
+                        <li><a href="#">Nicodemus</a></li>
+                        
+                    </div>
+                    
+                </ul>
+            </li>
+
+            <li class="creator">
+                <a href="creator.html">
+                    <img src="icons/member.svg">
+                    <span>Group Member</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="create.html">
+                    <img src="icons/create.svg">
+                    <span>Add Person</span>
+                </a>
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <div class="school">
+
+            <img class="logo" src="element/SPCS.png">
+            <div class="pangalan">
+                <h1 id="spcs"><span>St. Paul Christian School</span></h1>
+                <p id="sub">Inquiries, Investigations, and Immersion</p>
+            </div>
+        </div>
+
+                <div class="container">
+                    <div class="create-qr">
+                        <h2> Create Student QR Code</h2>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Enter the of student" required>
+                        <label></label>
+                        <select id="choices">
+                            <option value="">Section</option>
+                            <option value="Matthew">Matthew</option>
+                            <option value="Mark">Mark</option>
+                            <option value="Luke">Luke</option>
+                            <option value="John">John</option>
+                            <option value="Romans">Romans</option>
+                            <option value="Hebrews">Hebrews</option>
+                            <option value="Peter">Peter</option>
+                            <option value="Corinthians">Corinthians</option>
+                            <option value="Galatians">Galatians</option>
+                            <option value="Ephesians">Ephesians</option>
+                            <option value="Philippians">Philippians</option>
+                            <option value="Colossians">Colossians</option>
+                            <option value="Andrew">Andrew</option>
+                            <option value="James">James</option>
+                            <option value="Thomas">Thomas</option>
+                            <option value="Philip">Philip</option>
+                            <option value="Nathanael">Nathanael</option>
+                            <option value="Simon">Simon</option>
+                            <option value="Matthias">Matthias</option>
+                            <option value="Nicodemus">Nicodemus</option>
+                        </select>
+
+                        <button class="generate" id="generatebtn">Generata Code</button>
+                    </div>
+
+                </div>
+
+            <div class="qr-section" id="qr-display" style="display: none;text-align: center; max-width: 220px;">
+                <h2>Generated QR</h2>
+                <div id="userinfo"></div>
+                <div id="qrcode"></div>
+
+                <button id="dowloadqr" style="margin-top: 10px;">Dowload</button>
+            </div>
+
+        
+    </main>
+
+    
+</body>
+</html>
