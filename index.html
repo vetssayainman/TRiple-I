@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance</title>
+    <link rel="icon" href="element/SPCS.png" type="image/x-icon">
     <link rel="stylesheet" href="color.css">
     <script src="func.js" type="text/javascript" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,26 +20,26 @@
 
             <li class="name">
                 <span class="brand">Bengkong Gadz</span>
-                <button onclick="toggleSidebar()"" class="minu" id="toggle_btn"><img class="ikon" src="icons/Menu.svg"></button>
+                <button onclick="toggleSidebar()" class="minu" id="toggle_btn"><img class="ikon" src="icons/Menu.svg"></button>
             </li>
 
             <li class="active">
                 <a href="index.html">
-                    <img src="icons/home.svg.svg">
+                    <img  src="icons/home.svg.svg">
                     <span>Home</span>
                 </a>
             </li>
 
             <li>
                 <a href="dashboard.html">
-                    <img class="svg" src="icons/dashboard.svg.svg">
+                    <img  src="icons/dashboard.svg.svg">
                     <span>Dashboard</span>
                 </a>
             </li>
 
             <li>
                 <a href="qr.html">
-                    <img class="svg"  src="icons/scanner.svg">
+                    <img   src="icons/scanner.svg">
                     <span>QR Scanner</span>
                 </a>
             </li>
@@ -46,7 +47,7 @@
 
             <li class="scroll">
                 <button onclick="toggleSection(this)" class="dropdown_btn">
-                    <img src="icons/list.svg">
+                    <img  src="icons/list.svg">
                     <span>Attendace</span>
                     <img class="svg" src="icons/dropdown.svg">
                 </button>
@@ -104,7 +105,7 @@
             <img class="logo" src="element/SPCS.png">
             <div class="pangalan">
                 <h1 id="spcs"><span>St. Paul Christian School</span></h1>
-                <p id="sub">Inquiries, Investigations, and Immersion</p>
+                <p id="sub"><span>Inquiries, Investigations, and Immersion</span></p>
             </div>
             
 
@@ -117,8 +118,9 @@
 
         <section>
             <div class="introduction">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse nemo ullam molestiae magni? Alias quaerat adipisci dolores est officia numquam itaque error voluptatibus quidem, esse delectus sunt, vel molestiae eum.</p>  
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse nemo ullam molestiae magni? Alias quaerat adipisci dolores est officia numquam itaque error voluptatibus quidem, esse delectus sunt, vel molestiae eum.</p>
+                
+                <p>Technology plays an important role in improving efficiency in education. Traditionally, school records the students attendance manually by calling out the names of students or written sheets, which can consume time and may result in recording errors. One possible alternative is the use of QR codes, which allows attendance to be recorded digitally by scanning using phones or compatible devices. With the use of this technology, teachers may be able to manage attendance records more easily and reduce the time spent on checking students presence. It can also help organize attendance information digitally, making records easier to access and monitor</p>
+                <p>This study aims to determine the effectiveness of QR code scanning on attendance recording efficiency at St. Paul Christian School. Specifically, it will examine whether QR code scanning can be efficient at recording attendance, improve accuracy, and provide a faster way of monitoring the students attendance.</p>
             </div>
         </section>
 
@@ -127,33 +129,45 @@
         </section>
 
         <section class="sbs">
-            <div class="steps"><img class="stepimg" src="element/step1.png"><span class="expstep">Step 1: Prepare Your QR Code</span> 
+            <div class="steps"><img class="stepimg" id="rotating" src="element/step1.png"><span class="expstep">Step 1: Prepare Your QR Code</span> 
                 <p>Prepare your assigned unique QR Code for identification</p>
             </div>
-            <div class="steps"><img class="stepimg"  src="element/step2.png"> <span class="expstep">Step 2: Scan Your QR Code</span><p>Position your unique QR Code in front of the camera until it is successfully detected</p></div>
-            <div class="steps"><img class="stepimg" src="element/step3.png"><span class="expstep">Step 3: Verify Your Information</span><p>Wait for the system to recognize and display your student information</p></div>
-            <div class="steps"><img class="stepimg" src="element/step4.png"><span class="expstep">Step 4: Confirm Your Attendance</span><p>Once your information is verified, the system will record your attendance along with the corresponding date and time</p></div>
+            <div class="steps"><img class="stepimg"   src="element/step2.png"><span class="expstep">Step 2: Scan Your QR Code</span><p>Position your unique QR Code in front of the camera until it is successfully detected</p></div>
+            <div class="steps"><img class="stepimg"  src="element/step3.png"><span class="expstep">Step 3: Verify Your Information</span><p>Wait for the system to recognize and display your student information</p></div>
+            <div class="steps"><img class="stepimg" id="ringing" src="element/step4.png"><span class="expstep">Step 4: Confirm Your Attendance</span><p>Once your information is verified, the system will record your attendance along with the corresponding date and time</p></div>
         </section>
 
         <br><br>
 
+        
         <footer>
             <div class="footer-p">
-                <p class="footers"> 
-                    <img src="icons/loc.svg"
-                    <a href="https://www.google.com/maps/place/St.+Paul+Christian+School/@14.6855051,120.9757509,17z/data=!3m1!4b1!4m6!3m5!1s0x3397b40f00000001:0x6d96ecea3526abe9!8m2!3d14.6855051!4d120.9783258!16s%2Fg%2F12qflc5xg?entry=ttu&g_ep=EgoyMDI2MDgwNC4wIKXMDSoASAFQAw%3D%3D"><span>24 Tadeo St. Karuhatan, Valenzuela City, Philippine</span></a>
-                </p>
-        
-                <p class="footers">
-                    <img src="icons/email.svg"
-                    <a href="pic/dubist.mp3">bengkong@gmail.com</a></p>
 
                 <p class="footers">
-                    <img src="icons/phone.svg"
-                    <a href="https://www.bing.com/maps/directions?name=Alliance+Gospel+Church&FORM=QBMV&style=r&rtp=%7Epos.14.685504913330078_120.97832489013672_24%2520Tadeo%2520Street%25201441%2520Valenzuela%2520Metro%2520Manila_St.%2520Paul%2520Christian%2520School_ypid%3AYN1297478BBE41F9FC&cp=14.685505%7E120.978325&lvl=16"><span>09123676767</span></a>
+                    <img src="icons/loc.svg" alt="Location">
+                    <a href="https://www.google.com/maps/place/St.+Paul+Christian+School/@14.6855051,120.9757509,17z"
+                    target="_blank">
+                        <span>24 Tadeo St. Karuhatan, Valenzuela City</span>
+                    </a>
                 </p>
+
+                <p class="footers">
+                    <img src="icons/email.svg" alt="Email">
+                    <a href="mailto:bengkong@gmail.com">
+                        <span>bengkong@gmail.com</span>
+                    </a>
+                </p>
+
+                <p class="footers">
+                    <img src="icons/phone.svg" alt="Phone">
+                    <a href="tel:+639123676767">
+                        <span>09123676767</span>
+                    </a>
+                </p>
+
             </div>
         </footer>
+
     </main>
 
     
