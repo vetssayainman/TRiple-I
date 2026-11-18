@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance</title>
+    <title>QR Code Scanner</title>
+    <link rel="icon" href="element/SPCS.png" type="image/x-icon">
     <link rel="stylesheet" href="color.css">
     <script src="attendance.js" defer></script>
-    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js" defer></script>
     <script src="scanner.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
 
             <li class="name">
                 <span class="brand">Bengkong Gadz</span>
-                <button onclick="toggleSidebar()"" class="minu" id="toggle_btn"><img class="ikon" src="icons/Menu.svg"></button>
+                <button onclick="toggleSidebar()" class="minu" id="toggle_btn"><img class="ikon" src="icons/Menu.svg"></button>
             </li>
 
             <li class="active">
@@ -112,7 +113,7 @@
 
 
         <div class="qr-section">
-            <h2>QR Code Scanner</h2>
+            <h2 id="titled"   >QR Code Scanner</h2>
         </div>
         <div>
             <div id="reader"></div>
