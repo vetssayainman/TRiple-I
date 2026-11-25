@@ -292,7 +292,7 @@ a {
     text-align: center;
     flex-shrink: 1;
     animation: beat 0.5s infinite;
-    font-weight: 200;
+    font-weight: 400;
     
 }
 
@@ -336,12 +336,12 @@ a {
 }
 
     .footer-p {
+        align-items: baseline;
         background-color: black;
-        justify-content: start;
-        align-items: start;
-        border-top: 1px dotted grey ;
-
+        border-top: 1px inset grey;
     }
+
+    
 
 .generate{
     background-color: green;
@@ -902,6 +902,10 @@ option {
     justify-content: center;
     align-items: center;
 }   
+
+    .footers{
+        justify-content: left;
+    }
 
 
 }
